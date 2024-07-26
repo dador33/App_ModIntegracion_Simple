@@ -1,0 +1,16 @@
+<div>
+  <h3>Servicio Consumo</h3>
+  <ul>
+    <li *ngFor="let item of consumoItems">
+      <a [routerLink]="['/service', item.r_Id]">{{ item.r_NombreServicio }}</a>
+    </li>
+  </ul>
+</div>
+<div>
+  <h3>Servicio Publicacion</h3>
+  <ul>
+    <li *ngFor="let item of publicacionItems">
+      <a [routerLink]="['/service', item.r_Id]">{{ item.r_NombreServicio }}</a>
+    </li>
+  </ul>
+</div>
